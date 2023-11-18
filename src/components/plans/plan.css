@@ -1,0 +1,114 @@
+.heads{
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    justify-content: space-around;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 10px;
+}
+.plans{
+    display: flex;
+    justify-content: space-around;
+}
+.plans-blur{
+    filter: blur(100px);
+    width: 400px;
+    height: 400px;
+}
+.price{
+    display: flex;
+    font-weight: bold;
+    font-style: italic;;
+    gap: 1rem;
+    font-size: 2rem;
+}
+.price>span:nth-child(1){
+ 
+  fill: orange;
+  width: 2rem;
+  height: 2rem;
+  font-size: 30px;
+ 
+  >svg{
+    height: 40px;
+    width: 40px;
+  }
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(121, 118, 118);
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.plans>:nth-child(2){
+   background-image: linear-gradient(orange,yellow,rgb(229, 255, 0));
+    transform: scale(1.1);
+    .features>button{
+
+        background-image: linear-gradient(orange,yellow);
+    }
+}
+.features{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.features>span{
+    font-weight: bold;
+    font-style: italic;;
+    gap: 1rem;
+    font-size: 4rem;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.feature-item{
+    display: flex;
+    gap: 1rem;
+}
+
+.features>button{
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;;
+    gap: 1rem;
+    font-size: 1rem;
+}
+button{
+    color:black;
+   
+}
+@media screen and (max-width:768px) {
+    .main{
+        position: relative;
+        top: 4rem;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    .heads{
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plans{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .plans>:nth-child(2){
+     transform: none;
+    }
+}

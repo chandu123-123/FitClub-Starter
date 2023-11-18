@@ -1,0 +1,227 @@
+.hero{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+.hero-blur{
+    width: 400px;
+    height: 400px;
+    color: red;
+ 
+  }
+.left{
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}.right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position:relative;
+ flex: 1;
+ background-color: orange;
+}
+.the-best-ad{
+    text-transform: uppercase;
+    margin-top: 5rem;
+    color:white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #363d42;
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+    width: fit-content;
+    flex: 1 1;
+}
+.the-best-ad>span{
+    z-index: 2;
+    
+}
+.the-best-ad>div{
+    position: absolute;
+    background-color: orange;
+    z-index: 2;
+    height:80%;
+    width: 20%;
+    border-radius: 20px;
+    display: flex;
+    flex:1 1;
+}
+.hero-head{
+    display: flex;
+    gap: 1rem;
+    margin-top: 30px;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bold;
+    text-overflow: inherit;
+    color: white;
+}
+.hero-head>div:nth-of-type(3){
+    color: lightgray;
+    font-size: 1rem;
+   
+}
+.figures{
+    display: flex;
+   gap: 1.5rem;
+   position: relative;
+   top: 30px;
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.figures>div>span:nth-of-type(1){
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.figures>div>span:nth-of-type(2){
+  color: lightgray;
+}
+.hero-btn{
+    display: flex;
+    gap: 2rem;
+    margin-top: 30px;
+    padding: 30px; 
+  
+}
+.btn2{
+    background-color: transparent;
+    border: 2px solid orange;
+}
+.btn2:hover{
+    background-color: orange;
+}
+.btn1{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: fit-content;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--darkGrey);
+    position:absolute;
+    right: 3rem;
+    top: 6rem;
+}
+.heart-rate>span:nth-child(3){
+    color: white;
+    font-size: 1.3rem;
+}
+.hero1{
+    height: 25rem;
+    position:absolute;
+    top: 15rem;
+    right: 12rem;
+    
+}
+.heroback{
+    position: absolute;
+    top: 10rem;
+    right: 16rem;
+    z-index: -1;
+    height: 30rem;
+}
+.calories{
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+    width: 13rem;
+    position:absolute;
+    top: 30rem;
+    height: 5rem;
+    border-radius: 5px;
+    right: 35rem;
+ 
+}
+.calories>div{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 5px;
+    width: fit-content;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: cursive;
+}
+@media screen and (max-width:768px){
+    .hero{
+     
+        flex-direction: column;
+        
+    }
+    .hero-head{
+        display: flex;
+        gap: 1rem;
+        margin-top: 30px;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        text-overflow: inherit;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+  .figures{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+    .figures>div>span:nth-of-type(1){
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    
+    }
+    .right
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-btn{
+        display: flex;
+        gap: 2rem;
+        margin-top: 50px;
+        padding: 10px; 
+    }
+    .heart-rate{
+       left: 1rem;
+       top: 1rem;
+    }
+    .btn1{
+        top: 1.2rem;
+    }
+    .calories{
+        left: 1rem;
+        top: 5rem;
+        text-align: center;
+    }
+    .hero1{
+        position: relative;
+        top: 15rem;
+        left: 1rem;
+    }
+}

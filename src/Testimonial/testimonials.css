@@ -1,0 +1,112 @@
+.testimonials{
+    display: flex;
+    padding-bottom: 2rem;
+
+}
+.leftr{
+    display: flex;
+
+    flex-direction: column;
+    flex:1 1;
+    padding: 0px 20px;
+    gap: 2rem;
+}
+.leftr>:nth-child(1){
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    color: orange;
+    text-transform: uppercase;
+}
+.leftr>:nth-child(2){
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color:white;
+    text-transform: uppercase;
+}
+.leftr>:nth-child(3){
+    font-size: 1rem;
+    color: orange;
+    text-transform: uppercase;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.details>span{
+color: white;    
+}
+.details>span>:nth-child(2){
+    color: red;
+}
+.rightr{
+
+    flex: 1;
+  
+    position:relative ;
+}
+.rightr>div:nth-child(1) ,.one{
+    flex: 1;
+    position:absolute;
+    background-color: orange;
+    width: 14rem;
+    height: 17rem;
+    left: 16rem;
+    top: 1rem;
+}
+.rightr>div:nth-child(2){
+    flex: 1;
+    position:absolute;
+   border: orange solid 2px;
+    width: 14rem;
+    height: 17rem;
+    left: 14rem;
+    top: -1rem;
+}
+.mai {
+    width: 210px; /* Set your desired width */
+    height: 250px; /* Set your desired height */
+  /* Maintain aspect ratio */
+object-fit: cover;
+   position: relative;
+   left: 15.5rem; 
+ top: 1rem; 
+}
+  
+.image{
+    display: flex;
+    gap: 1rem;
+   position: relative;
+   top: -20px;
+}
+.image>img{
+  
+    width: fit-content;
+    width: 2rem;
+    height: 2rem;
+}
+@media screen and (max-width:768px){
+  .testimonials{
+    display: flex;
+    flex-direction: column;
+  }
+    .rightr{
+       justify-content: center;
+        position: relative;
+        right: 10rem;
+        top: 10rem;
+        display: flex;
+    }
+    .image{
+        position: relative;
+      top: -6rem;
+      left: 3rem;
+       z-index: 1;display:flex;
+       gap: 2rem;
+       justify-content: center;
+       align-content: center;
+    }
+    
+}

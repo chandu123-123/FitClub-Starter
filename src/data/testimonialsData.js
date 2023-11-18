@@ -18,7 +18,7 @@ export const testimonialsData = [
   },
   {
     image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem jai telangana ki jai',
     name: 'FRANKLIN',
     status: "CUSTOMER"
   }
